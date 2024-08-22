@@ -36,7 +36,11 @@ android {
 }
 
 dependencies {
-
+    implementation (project(":core"))
+    implementation (project(":data"))
+    implementation (project(":domain"))
+    implementation (project(":presentation"))
+    implementation (project(":di"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
