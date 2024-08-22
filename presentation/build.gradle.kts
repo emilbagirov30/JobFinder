@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.android.library")
+    kotlin("android")
 }
 
 android {
@@ -8,12 +8,10 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.emil.presentation"
+
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
+    
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
